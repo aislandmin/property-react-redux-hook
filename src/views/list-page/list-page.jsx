@@ -9,6 +9,7 @@ import { updateShowOptions } from "../../redux/show-option-slice";
 function ListPage(props) {
   useEffect(() => {
     async function getPropertiesList() {
+      console.log("getPropertiesList.......");
       try {
         const resData = await axios({
           url: "https://api.realjaja.com/mh/queryHouCondition",

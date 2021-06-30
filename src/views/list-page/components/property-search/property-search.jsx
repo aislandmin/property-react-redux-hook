@@ -8,8 +8,8 @@ import { updateShowOptions } from "../../../../redux/show-option-slice";
 function PropertySearch(props) {
   const [type, setType] = useState("All Types");
 
-  async function processSearchByFilter() {
-    console.log("processSearchByFilter... ");
+  async function processSearchByFilter(type) {
+    console.log("processSearchByFilter... ", type);
 
     let houCondition = {
       sortBy: "listingCreatedTimestamp",
@@ -48,13 +48,14 @@ function PropertySearch(props) {
   }
 
   function handleTypeClick(type) {
-    console.log("handleTypeChange......");
+    console.log("handleTypeChange......", type);
 
     setType(type);
+    console.log("after setType.....", type);
 
     props.updateShowOptions(false);
 
-    processSearchByFilter();
+    processSearchByFilter(type);
   }
 
   function handleFilterClick(event) {
