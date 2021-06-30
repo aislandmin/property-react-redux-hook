@@ -1,0 +1,20 @@
+.details {
+  .details-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    .detail-imgs {
+        margin-top: 30px;
+      text-align: center;
+      height: 600px;
+    }
+    .detail-address {
+      font-size: 24px;
+      font-weight: 500;
+      height: 100px;
+      line-height: 100px;
+    }
+    .detail-description {
+      font-size: 20px;
+    }
+  }
+}
