@@ -41,7 +41,7 @@ function ListPage(props) {
     }
 
     getPropertiesList();
-  }, []);
+  });
 
   return (
     <div

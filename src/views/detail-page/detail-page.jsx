@@ -30,7 +30,7 @@ function DetailPage(props) {
 
   const imgs = propertyDetail?.pictures;
 
-  if (propertyDetail == null) return null;
+  if (propertyDetail === null) return null;
 
   return (
     <div className="details">
